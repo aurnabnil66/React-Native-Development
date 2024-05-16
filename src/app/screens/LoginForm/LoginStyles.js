@@ -4,10 +4,10 @@ import {StyleSheet} from 'react-native';
 const loginStyles = StyleSheet.create({
   container: {
     padding: 24,
-    flex: 1,
     justifyContent:'center',
     margin:0,
-    backgroundColor:'#17202a',
+    height:"100%",
+
   },
   header: {
     marginVertical: 36,
@@ -63,7 +63,7 @@ const loginStyles = StyleSheet.create({
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    alignSelf:'center'
+    alignSelf:'center',
   },
   ButtonText: {
     fontSize: 17,
