@@ -57,6 +57,7 @@ const NiddleUIStyles = StyleSheet.create({
     color: "#131212CC", 
     padding: 14, 
     left: 38,
+    justifyContent: "space-between"
   },
   LogInButton: {
     width: 218,
@@ -74,6 +75,12 @@ const NiddleUIStyles = StyleSheet.create({
     color: '#FFFFFF',
     marginBottom: 6,
   },
+  forgetCridentialTxt: {
+    color: '#7D7D7D', 
+    padding: 14, 
+    justifyContent: "space-between",
+    marginLeft: 35
+  }
 });
 
 export default NiddleUIStyles;

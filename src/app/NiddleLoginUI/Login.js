@@ -35,7 +35,7 @@ function NiddleLogin() {
 
       <View>
         <View style={NiddleUIStyles.usernameField}>
-          <User style={{left: 5, marginRight:10, marginLeft:10}} />
+          <User style={{left: 5, marginRight: 10, marginLeft: 10}} />
           <TextInput
             color="#000"
             autoCapitalize="none"
@@ -46,8 +46,8 @@ function NiddleLogin() {
         </View>
 
         <View style={NiddleUIStyles.passwordField}>
-          <View style={{flexDirection:'row', alignItems:'center'}}>
-            <Passowrd style={{left: 5, marginRight:10,  marginLeft:10}} />
+          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <Passowrd style={{left: 5, marginRight: 10, marginLeft: 10}} />
             <TextInput
               secureTextEntry={showPassword ? false : true}
               color="#000"
@@ -61,14 +61,15 @@ function NiddleLogin() {
             <TouchableOpacity
               onPress={() => {
                 setShowPassword(!showPassword);
-              }}><ShowPass style={{justifyContent: 'spaceBetween', right: 10}} /></TouchableOpacity>
-            
+              }}>
+              <ShowPass style={{justifyContent: 'spaceBetween', right: 10}} />
+            </TouchableOpacity>
           </View>
         </View>
       </View>
 
       <View style={{flexDirection: 'row'}}>
-        <View>
+        <View style={{flexDirection: 'row'}}>
           <Switch
             style={NiddleUIStyles.switchStyle}
             trackColor={{false: '#767577', true: '#81b0ff'}}
@@ -77,11 +78,13 @@ function NiddleLogin() {
             onValueChange={toggleSwitch}
             value={isEnabled}
           />
+          <Text style={NiddleUIStyles.switchBesideTxt}>Remember Me</Text>
         </View>
-        <Text style={NiddleUIStyles.switchBesideTxt}>Remember Me</Text>
-        <Text style={{color: '#7D7D7D', padding: 14, left: 40}}>
-          Forget Cridential?
-        </Text>
+        <View>
+          <Text style={NiddleUIStyles.forgetCridentialTxt}>
+            Forget Cridential?
+          </Text>
+        </View>
       </View>
 
       <View>
