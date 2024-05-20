@@ -4,6 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 import HomeScreen from './src/app/screens/HomeScreen/HomeScreen';
 import NiddleLogin from './src/app/NiddleLoginUI/Login';
+import HomePage from './src/app/KPIHomePage/HomePage';
 
 export default function App() {
   // const Stack = createNativeStackNavigator();
@@ -21,6 +22,7 @@ export default function App() {
   // );
 
   return (
-    <NiddleLogin/>
+    // 
+    <HomePage/>
   );
 }
