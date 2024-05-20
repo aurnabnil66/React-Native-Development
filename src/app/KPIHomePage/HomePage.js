@@ -1,14 +1,27 @@
 import React from 'react';
 import {useState} from 'react';
-import {View, Text, TouchableOpacity, ScrollView, FlatList} from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  ScrollView,
+  FlatList,
+  StyleSheet,
+} from 'react-native';
 import MenuOutline from '../../Images/MenuOutline';
 import NotifyBell from '../../Images/NotifyBell';
 import KPIStyles from './KPIStyles';
 import Vector from '../../Images/Vector';
 import GreenUpArrow from '../../Images/GreenUpArrow';
 import RedDownArrow from '../../Images/RedDownArrow';
+import CheckBoxList from './KPICheckBoxList';
+import {NavigationContainer, NavigationProp} from '@react-navigation/native';
+import {
+  createNativeStackNavigator,
+  NativeStackNavigationProp,
+} from '@react-navigation/native-stack';
 
-function HomePage() {
+function HomePage({navigation}) {
   // mapped buttons
   const MappedButtons = [
     {text: 'Efficiency', num: 999},
@@ -129,7 +142,9 @@ function HomePage() {
           </Text>
         </View>
         <View>
-          <TouchableOpacity style={KPIStyles.KPITopButton}>
+          <TouchableOpacity onPress={() => {
+            navigation.push("CheckBoxList");
+          }} style={KPIStyles.KPITopButton}>
             <Vector />
             <Text style={KPIStyles.KPITopButtonText}>KPI</Text>
           </TouchableOpacity>
@@ -158,21 +173,42 @@ function HomePage() {
         renderItem={({item}) => (
           <View style={KPIStyles.CardStyle}>
             <View style={KPIStyles.CardHeading}>
-              <Text>{item.date}</Text>
-              <Text>{item.hour}</Text>
+              <Text style={KPIStyles.CardHeadingText}>{item.date}</Text>
+              <Text style={KPIStyles.CardHeadingText}>{item.hour}</Text>
             </View>
+            <View style={KPIStyles.HorizontalLine}></View>
+
             <View
               style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-              <Text>{item.productivityStart}</Text>
-              <Text style={{marginRight: 22}}>{item.productivityNum}</Text>
-              <Text style={{marginRight: 22}}>{item.productivityEnd}</Text>
-              <GreenUpArrow />
-              <Text style={KPIStyles.LineUpStyle}>{item.lineText}</Text>
-              <Text>{item.lineUp}</Text>
-              <RedDownArrow />
-              <Text style={KPIStyles.LineDownStyle}>{item.lineText}</Text>
-              <Text>{item.lineDown}</Text>
+              <View
+                style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+                <Text style={KPIStyles.ProductivityText}>
+                  {item.productivityStart}
+                </Text>
+                <Text style={KPIStyles.ProductivityNum}>
+                  {item.productivityNum}
+                </Text>
+                <Text style={KPIStyles.ProductivityLine}>
+                  {item.productivityEnd}
+                </Text>
+              </View>
+
+              <View
+                style={{flexDirection: 'row', justifyContent: 'space-between', right: 10}}>
+                <GreenUpArrow />
+                <Text style={KPIStyles.LineUpStyle}>{item.lineText}</Text>
+                <Text style={KPIStyles.LineUpStyle}>{item.lineUp}</Text>
+                <Text style={KPIStyles.LineVertical}> | </Text>
+              </View>
+
+              <View
+                style={{flexDirection: 'row', justifyContent: 'space-between', right: 4}}>
+                <RedDownArrow />
+                <Text style={KPIStyles.LineDownStyle}>{item.lineText}</Text>
+                <Text style={KPIStyles.LineDownNum}>{item.lineDown}</Text>
+              </View>
             </View>
+
             <View
               style={{flexDirection: 'row', justifyContent: 'space-between'}}>
               <View style={KPIStyles.NoProdBox}>
@@ -184,12 +220,51 @@ function HomePage() {
                 <Text style={KPIStyles.HighProdText}>{item.highProdNum}</Text>
               </View>
               <View style={KPIStyles.NormalProdBox}>
-                <Text style={KPIStyles.NormalProdText}>{item.normalProdText}</Text>
-                <Text style={KPIStyles.NormalProdText}>{item.normalProdNum}</Text>
+                <Text style={KPIStyles.NormalProdText}>
+                  {item.normalProdText}
+                </Text>
+                <Text style={KPIStyles.NormalProdText}>
+                  {item.normalProdNum}
+                </Text>
               </View>
               <View style={KPIStyles.LowProdBox}>
                 <Text style={KPIStyles.LowProdText}>{item.lowProdText}</Text>
                 <Text style={KPIStyles.LowProdText}>{item.lowProdNum}</Text>
+              </View>
+            </View>
+
+            <View
+              style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+              <View>
+                <Text style={KPIStyles.kanbanText}>{item.kanban}</Text>
+              </View>
+              <View>
+                <Text style={KPIStyles.secondVerticalLine}> | </Text>
+              </View>
+              <View>
+                <Text style={KPIStyles.RequisitionText}>
+                  {item.requisition}
+                </Text>
+              </View>
+            </View>
+
+            <View
+              style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+              <View style={KPIStyles.NewProdBox}>
+                <Text style={KPIStyles.NewProdText}>{item.newText}</Text>
+                <Text style={KPIStyles.NewProdText}>{item.newNum}</Text>
+              </View>
+              <View style={KPIStyles.WarningProdBox}>
+                <Text style={KPIStyles.NormalProdText}>{item.warningText}</Text>
+                <Text style={KPIStyles.NormalProdText}>{item.warningNum}</Text>
+              </View>
+              <View style={KPIStyles.LowProdBox2}>
+                <Text style={KPIStyles.LowProdText}>{item.lowProdText}</Text>
+                <Text style={KPIStyles.LowProdText}>{item.lowProdNum}</Text>
+              </View>
+              <View style={KPIStyles.BlankProdBox}>
+                <Text>{}</Text>
+                <Text>{}</Text>
               </View>
             </View>
           </View>

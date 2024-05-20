@@ -5,24 +5,26 @@ import {NavigationContainer} from '@react-navigation/native';
 import HomeScreen from './src/app/screens/HomeScreen/HomeScreen';
 import NiddleLogin from './src/app/NiddleLoginUI/Login';
 import HomePage from './src/app/KPIHomePage/HomePage';
+import CheckBoxList from './src/app/KPIHomePage/KPICheckBoxList';
 
 export default function App() {
-  // const Stack = createNativeStackNavigator();
-  // return (
-  //   <NavigationContainer>
-  //     <Stack.Navigator
-  //       screenOptions={{
-  //         headerShown: false,
-  //       }}
-  //       initialRouteName="Login">
-  //       <Stack.Screen name="Login" component={Login} />
-  //       <Stack.Screen name="Home" component={HomeScreen} />
-  //     </Stack.Navigator>
-  //   </NavigationContainer>
-  // );
-
+  const Stack = createNativeStackNavigator();
   return (
-    // 
-    <HomePage/>
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+        initialRouteName="HomePage">
+        <Stack.Screen name="HomePage" component={HomePage} />
+        <Stack.Screen name="CheckBoxList" component={CheckBoxList} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
+
+  // return (
+  //   // 
+  //   <HomePage/>
+  //   // <CheckBoxList/>
+  // );
 }
