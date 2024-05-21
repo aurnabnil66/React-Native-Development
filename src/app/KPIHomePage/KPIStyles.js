@@ -167,12 +167,13 @@ const KPIStyles = StyleSheet.create({
     backgroundColor: '#4C4C4C',
     textAlign: 'center',
     justifyContent: 'center',
-    marginTop: 3
+    marginTop: 3,
+    opacity:0.3,
   },
   NoProdText: {
     fontSize: 12,
-    fontWeight: '400',
-    color: '#fff',
+    fontWeight: '900',
+    color: '#4C4C4C',
     marginTop: 2
   },
   HighProdBox: {
@@ -181,14 +182,15 @@ const KPIStyles = StyleSheet.create({
     width: 78,
     borderRadius: 10,
     backgroundColor: '#22B14C',
+    opacity:0.3,
     textAlign: 'center',
     justifyContent: 'center',
     marginTop: 3
   },
   HighProdText: {
     fontSize: 12,
-    fontWeight: '400',
-    color: '#fff',
+    fontWeight: '900',
+    color: '#22B14C',
     marginTop: 2
   },
   NormalProdBox: {
@@ -197,14 +199,15 @@ const KPIStyles = StyleSheet.create({
     width: 78,
     borderRadius: 10,
     backgroundColor: '#DAB600',
+    opacity:0.3,
     textAlign: 'center',
     justifyContent: 'center',
     marginTop: 3
   },
   NormalProdText: {
     fontSize: 12,
-    fontWeight: '400',
-    color: '#fff',
+    fontWeight: '900',
+    color: '#DAB600',
     marginTop: 2
   },
   LowProdBox: {
@@ -213,14 +216,15 @@ const KPIStyles = StyleSheet.create({
     width: 78,
     borderRadius: 10,
     backgroundColor: '#EE1C24',
+    opacity:0.3,
     textAlign: 'center',
     justifyContent: 'center',
     marginTop: 3
   },
   LowProdText: {
     fontSize: 12,
-    fontWeight: '400',
-    color: '#fff',
+    fontWeight: '900',
+    color: '#EE1C24',
     marginTop: 2
   },
   NewProdBox: {
@@ -229,14 +233,15 @@ const KPIStyles = StyleSheet.create({
     width: 78,
     borderRadius: 10,
     backgroundColor: '#4C4C4C',
+    opacity:0.3,
     textAlign: 'center',
     justifyContent: 'center',
     marginTop: 3
   },
   NewProdText: {
     fontSize: 12,
-    fontWeight: '400',
-    color: '#fff',
+    fontWeight: '900',
+    color: '#4C4C4C',
     marginTop: 2
   },
   WarningProdBox: {
@@ -245,14 +250,15 @@ const KPIStyles = StyleSheet.create({
     width: 78,
     borderRadius: 10,
     backgroundColor: '#DAB600',
+    opacity:0.3,
     textAlign: 'center',
     justifyContent: 'center',
     marginTop: 3
   },
   WarningProdText: {
     fontSize: 12,
-    fontWeight: '400',
-    color: '#fff',
+    fontWeight: '900',
+    color: '#DAB600',
     marginTop: 2
   },
   LowProdBox2: {
@@ -261,6 +267,7 @@ const KPIStyles = StyleSheet.create({
     width: 78,
     borderRadius: 10,
     backgroundColor: '#EE1C24',
+    opacity:0.3,
     textAlign: 'center',
     justifyContent: 'center',
     marginTop: 3
@@ -271,6 +278,7 @@ const KPIStyles = StyleSheet.create({
     width: 78,
     borderRadius: 10,
     backgroundColor: '#F8F8F8',
+    opacity:0.3,
     textAlign: 'center',
     justifyContent: 'center',
     marginTop: 3
