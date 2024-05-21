@@ -7,24 +7,41 @@ import NiddleLogin from './src/app/NiddleLoginUI/Login';
 import HomePage from './src/app/KPIHomePage/HomePage';
 import CheckBoxList from './src/app/KPIHomePage/KPICheckBoxList';
 
+import SignIn from './src/app/Calculator/Screens/SignInScreen';
+import CalcHome from './src/app/Calculator/Screens/CalcHomeScreen';
+
 export default function App() {
   const Stack = createNativeStackNavigator();
+  // return (
+  //   <NavigationContainer>
+  //     <Stack.Navigator
+  //       screenOptions={{
+  //         headerShown: false,
+  //       }}
+  //       initialRouteName="HomePage">
+  //       <Stack.Screen name="HomePage" component={HomePage} />
+  //       <Stack.Screen name="CheckBoxList" component={CheckBoxList} />
+  //     </Stack.Navigator>
+  //   </NavigationContainer>
+  // );
+
   return (
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
         }}
-        initialRouteName="HomePage">
-        <Stack.Screen name="HomePage" component={HomePage} />
-        <Stack.Screen name="CheckBoxList" component={CheckBoxList} />
+        initialRouteName="SignIn">
+        <Stack.Screen name="SignIn" component={SignIn} />
+        <Stack.Screen name="CalcHome" component={CalcHome} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 
   // return (
   //   // 
-  //   <HomePage/>
+  //   //<HomePage/>
   //   // <CheckBoxList/>
+  //   <SignIn/>
   // );
 }

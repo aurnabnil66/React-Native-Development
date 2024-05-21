@@ -3,7 +3,6 @@ import {useState} from 'react';
 import {Text, StyleSheet, View, FlatList, TouchableOpacity} from 'react-native';
 import KPIStyles from './KPIStyles';
 import CheckBox from '@react-native-community/checkbox';
-import HomePage from './HomePage';
 
 function CheckBoxList({navigation}) {
 
