@@ -45,7 +45,13 @@ const SignInStyle = StyleSheet.create({
     color: '#FFFFFF',
     marginBottom: 6,
   },
-
+  ErrorText:{
+    fontSize: 15,
+    fontWeight: '400',
+    color: '#EE1C24',
+    justifyContent: 'center',
+    alignSelf: 'center'
+  },
 });
 
 export default SignInStyle;

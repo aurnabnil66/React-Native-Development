@@ -80,6 +80,21 @@ const CalcHomeStyle = StyleSheet.create({
     alignSelf: 'center',
     marginTop: 11.5
   },
+  UserButtonsStyle: {
+    width: 150,
+    height: 50,
+    backgroundColor: '#4C4C4C',
+    borderRadius: 80,
+    marginLeft: 150,
+    marginBottom: 15
+  },
+  UserButtonText: {
+    fontSize: 25,
+    fontWeight: '400',
+    color: '#FFFFFF',
+    alignSelf: 'center',
+    marginTop: 6.5
+  },
 });
 
 export default CalcHomeStyle;
