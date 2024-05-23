@@ -10,6 +10,9 @@ import CheckBoxList from './src/app/KPIHomePage/KPICheckBoxList';
 import SignIn from './src/app/Calculator/Screens/SignInScreen';
 import CalcHome from './src/app/Calculator/Screens/CalcHomeScreen';
 
+import ShowUseStateView from './src/app/Hooks/useState/View';
+import ShowUseEffectView from './src/app/Hooks/useEffect/View';
+
 export default function App() {
   const Stack = createNativeStackNavigator();
   // return (
@@ -25,23 +28,26 @@ export default function App() {
   //   </NavigationContainer>
   // );
 
-  return (
-    <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerShown: false,
-        }}
-        initialRouteName="SignIn">
-        <Stack.Screen name="SignIn" component={SignIn} />
-        <Stack.Screen name="CalcHome" component={CalcHome} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+  // return (
+  //   <NavigationContainer>
+  //     <Stack.Navigator
+  //       screenOptions={{
+  //         headerShown: false,
+  //       }}
+  //       initialRouteName="SignIn">
+  //       <Stack.Screen name="SignIn" component={SignIn} />
+  //       <Stack.Screen name="CalcHome" component={CalcHome} />
+  //     </Stack.Navigator>
+  //   </NavigationContainer>
+  // );
 
   // return (
   //   // 
   //   //<HomePage/>
-  //   // <CheckBoxList/>
-  //   <SignIn/>
   // );
+
+  return(
+    // <ShowUseStateView/>
+    <ShowUseEffectView/>
+  );
 }
