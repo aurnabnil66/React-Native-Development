@@ -1,14 +1,14 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 
-const CalcHomeStyle = StyleSheet.create({
-  Container: {
+const calcHomeStyle = StyleSheet.create({
+  container: {
     flex: 1,
     backgroundColor: '#fff',
     padding: 50,
     justifyContent: 'center',
   },
-  GoBackButton: {
+  goBackButton: {
     width: 218,
     height: 59,
     backgroundColor: '#4C4C4C',
@@ -18,68 +18,83 @@ const CalcHomeStyle = StyleSheet.create({
     alignSelf: 'center',
     marginTop: 60,
   },
-  GoBackButtonText: {
+  goBackButtonText: {
     fontSize: 18,
     fontWeight: '400',
     color: '#FFFFFF',
     marginBottom: 6,
   },
-  ClacDisplay: {
+  clacDisplay: {
     backgroundColor: '#d0d3d4',
     padding: 20,
     margin: 9,
     borderRadius: 12,
   },
-  CalcDisplayText: {
+  calcDisplayText: {
     fontSize: 28,
     color: '#4C4C4C',
   },
-  ButtonPosition: {
+  buttonPosition: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
     marginTop: 6
   },
-  ClacButtonsStyle: {
+  clacButtonsStyle: {
     width: 70,
     height: 70,
     backgroundColor: '#4C4C4C',
     borderRadius: 80,
   },
-  CalcButtonText: {
+  calcButtonText: {
     fontSize: 30,
     fontWeight: '400',
     color: '#FFFFFF',
     alignSelf: 'center',
     marginTop: 11.5
   },
-  ZeroButtonStyle: {
+  zeroButtonStyle: {
     width: 150,
     height: 70,
     backgroundColor: '#4C4C4C',
     borderRadius: 80,
   },
-  ZeroButtonText: {
+  zeroButtonText: {
     fontSize: 30,
     fontWeight: '400',
     color: '#FFFFFF',
     alignSelf: 'center',
     marginTop: 11.5
   },
-  CButtonStyle: {
+  cButtonStyle: {
     width: 310,
     height: 70,
     backgroundColor: '#4C4C4C',
     borderRadius: 80,
     marginTop: 6
   },
-  CButtonText: {
+  cButtonText: {
     fontSize: 30,
     fontWeight: '400',
     color: '#FFFFFF',
     alignSelf: 'center',
     marginTop: 11.5
   },
+  userButtonsStyle: {
+    width: 150,
+    height: 50,
+    backgroundColor: '#4C4C4C',
+    borderRadius: 80,
+    marginLeft: 150,
+    marginBottom: 15
+  },
+  userButtonText: {
+    fontSize: 25,
+    fontWeight: '400',
+    color: '#FFFFFF',
+    alignSelf: 'center',
+    marginTop: 6.5
+  },
 });
 
-export default CalcHomeStyle;
+export default calcHomeStyle;
