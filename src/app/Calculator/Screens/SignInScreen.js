@@ -37,7 +37,7 @@ function SignIn({navigation}) {
     <View>
       <View style={signInStyle.userNameField}>
         {/* need to update */}
-        <User style={signInStyle.userNameFieldInside} />
+        <User style={signInStyle.usernameFieldInside} />
         <TextInput
           color="#000"
           autoCapitalize="none"

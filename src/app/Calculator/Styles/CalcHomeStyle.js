@@ -38,7 +38,7 @@ const calcHomeStyle = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    marginTop: 6,
+    marginTop: 6
   },
   clacButtonsStyle: {
     width: 70,
@@ -51,7 +51,7 @@ const calcHomeStyle = StyleSheet.create({
     fontWeight: '400',
     color: '#FFFFFF',
     alignSelf: 'center',
-    marginTop: 11.5,
+    marginTop: 11.5
   },
   zeroButtonStyle: {
     width: 150,
@@ -64,21 +64,21 @@ const calcHomeStyle = StyleSheet.create({
     fontWeight: '400',
     color: '#FFFFFF',
     alignSelf: 'center',
-    marginTop: 11.5,
+    marginTop: 11.5
   },
   cButtonStyle: {
     width: 310,
     height: 70,
     backgroundColor: '#4C4C4C',
     borderRadius: 80,
-    marginTop: 6,
+    marginTop: 6
   },
   cButtonText: {
     fontSize: 30,
     fontWeight: '400',
     color: '#FFFFFF',
     alignSelf: 'center',
-    marginTop: 11.5,
+    marginTop: 11.5
   },
   userButtonsStyle: {
     width: 150,
@@ -86,14 +86,14 @@ const calcHomeStyle = StyleSheet.create({
     backgroundColor: '#4C4C4C',
     borderRadius: 80,
     marginLeft: 150,
-    marginBottom: 15,
+    marginBottom: 15
   },
   userButtonText: {
     fontSize: 25,
     fontWeight: '400',
     color: '#FFFFFF',
     alignSelf: 'center',
-    marginTop: 6.5,
+    marginTop: 6.5
   },
 });
 

@@ -1,14 +1,14 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 
-const userStyle = StyleSheet.create({
+const UserStyle = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
     padding: 35,
     justifyContent: 'center',
   },
-  UserNameText: {
+  userNameText: {
     fontSize: 20,
     fontWeight: 'bold',
     color: '#111111',
@@ -30,7 +30,7 @@ const userStyle = StyleSheet.create({
     color: 'white',
     letterSpacing: 2,
     marginBottom: 10,
-    flexDirection:'row'
+    flexDirection: 'row',
   },
   calculationHeadingUserName: {
     marginLeft: 5,
@@ -48,4 +48,4 @@ const userStyle = StyleSheet.create({
   },
 });
 
-export default userStyle;
+export default UserStyle;

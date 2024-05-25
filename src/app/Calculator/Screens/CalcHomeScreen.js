@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {View, TouchableOpacity, Text, Button} from 'react-native';
-import calcHomeStyle from '../Styles/calcHomeStyle';
+import {View, TouchableOpacity, Text} from 'react-native';
+import calcHomeStyle from '../Styles/CalcHomeStyle';
 import {useRoute} from '@react-navigation/native';
 
 function CalcHome({navigation}) {

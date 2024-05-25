@@ -29,7 +29,7 @@ const signInStyle = StyleSheet.create({
     alignSelf: 'center',
     marginTop: 40,
   },
-  userNameFieldInside: {
+  usernameFieldInside: {
     left: 5, 
     marginRight: 10, 
     marginLeft: 10
