@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {View, Text, TextInput, TouchableOpacity} from 'react-native';
-import SignInStyle from '../Styles/SignInStyle';
+import signInStyle from '../Styles/signInStyle';
 import CalculatorImg from '../../../Images/CalculatorImg';
 import User from '../../../Images/User';
 
@@ -28,16 +28,16 @@ function SignIn({navigation}) {
     }
   };
   return(
-    <View style={SignInStyle.Container}>
-    <CalculatorImg style={SignInStyle.CalculatorImg}/>
+    <View style={signInStyle.container}>
+    <CalculatorImg style={signInStyle.calculatorImg}/>
     <View>
-      <Text style={SignInStyle.AppNameText}>Calculator</Text>
+      <Text style={signInStyle.appNameText}>Calculator</Text>
     </View>
 
     <View>
-      <View style={SignInStyle.UserNameField}>
+      <View style={signInStyle.userNameField}>
         {/* need to update */}
-        <User style={{left: 5, marginRight: 10, marginLeft: 10}} />
+        <User style={signInStyle.userNameFieldInside} />
         <TextInput
           color="#000"
           autoCapitalize="none"
@@ -48,12 +48,12 @@ function SignIn({navigation}) {
           defaultValue={name}
         />
       </View>
-      {inputError.length > 0 && <Text style={SignInStyle.ErrorText}>{inputError}</Text> }
+      {inputError.length > 0 && <Text style={signInStyle.errorText}>{inputError}</Text> }
     </View>
 
     <View>
-      <TouchableOpacity onPress={handleSignIn} style={SignInStyle.SignInButton}>
-        <Text style={SignInStyle.ButtonText}>Sign In</Text>
+      <TouchableOpacity onPress={handleSignIn} style={signInStyle.signInButton}>
+        <Text style={signInStyle.buttonText}>Sign In</Text>
       </TouchableOpacity>
     </View>
   </View>
