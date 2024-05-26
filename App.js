@@ -1,11 +1,6 @@
 import React from 'react';
-import Login from './src/app/screens/LoginForm/Login';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
-import HomeScreen from './src/app/screens/HomeScreen/HomeScreen';
-import NiddleLogin from './src/app/NiddleLoginUI/Login';
-import HomePage from './src/app/KPIHomePage/HomePage';
-import CheckBoxList from './src/app/KPIHomePage/KPICheckBoxList';
 
 import SignIn from './src/app/Calculator/Screens/SignInScreen';
 import CalcHome from './src/app/Calculator/Screens/CalcHomeScreen';

@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {View, TouchableOpacity, Text, Button} from 'react-native';
-import CalcHomeStyle from '../Styles/CalcHomeStyle';
+import calcHomeStyle from '../Styles/calcHomeStyle';
 import {useRoute} from '@react-navigation/native';
-import UserDetails from './UserDetails';
 
 function CalcHome({navigation}) {
   const route = useRoute(); // hook to access route object
@@ -64,113 +63,113 @@ function CalcHome({navigation}) {
   };
 
   return (
-    <View style={CalcHomeStyle.Container}>
+    <View style={calcHomeStyle.container}>
       <View>
         <TouchableOpacity
-          style={CalcHomeStyle.UserButtonsStyle}
+          style={calcHomeStyle.userButtonsStyle}
           onPress={() => {
             navigation.push('UserDetails', { showCalculations: calculations, userName:userName });
           }}>
-          <Text style={CalcHomeStyle.UserButtonText}>{userName}</Text>
+          <Text style={calcHomeStyle.userButtonText}>{userName}</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={CalcHomeStyle.ClacDisplay}>
-        <Text style={CalcHomeStyle.CalcDisplayText}>{display}</Text>
+      <View style={calcHomeStyle.clacDisplay}>
+        <Text style={calcHomeStyle.calcDisplayText}>{display}</Text>
       </View>
 
-      <View style={CalcHomeStyle.ButtonPosition}>
+      <View style={calcHomeStyle.buttonPosition}>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => PressNum('7')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>7</Text>
+          <Text style={calcHomeStyle.calcButtonText}>7</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => PressNum('8')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>8</Text>
+          <Text style={calcHomeStyle.calcButtonText}>8</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => PressNum('9')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>9</Text>
+          <Text style={calcHomeStyle.calcButtonText}>9</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => PressOperator('/')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>÷</Text>
+          <Text style={calcHomeStyle.calcButtonText}>÷</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={CalcHomeStyle.ButtonPosition}>
+      <View style={calcHomeStyle.buttonPosition}>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => PressNum('4')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>4</Text>
+          <Text style={calcHomeStyle.calcButtonText}>4</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => PressNum('5')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>5</Text>
+          <Text style={calcHomeStyle.calcButtonText}>5</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => PressNum('6')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>6</Text>
+          <Text style={calcHomeStyle.calcButtonText}>6</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => PressOperator('*')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>x</Text>
+          <Text style={calcHomeStyle.calcButtonText}>x</Text>
         </TouchableOpacity>
       </View>
 
 
-      <View style={CalcHomeStyle.ButtonPosition}>
+      <View style={calcHomeStyle.buttonPosition}>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => PressNum('1')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>1</Text>
+          <Text style={calcHomeStyle.calcButtonText}>1</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => PressNum('2')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>2</Text>
+          <Text style={calcHomeStyle.calcButtonText}>2</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => PressNum('3')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>3</Text>
+          <Text style={calcHomeStyle.calcButtonText}>3</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => PressOperator('-')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>-</Text>
+          <Text style={calcHomeStyle.calcButtonText}>-</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={CalcHomeStyle.ButtonPosition}>
+      <View style={calcHomeStyle.buttonPosition}>
         <TouchableOpacity
-          style={CalcHomeStyle.ZeroButtonStyle}
+          style={calcHomeStyle.zeroButtonStyle}
           onPress={() => PressNum('0')}>
-          <Text style={CalcHomeStyle.ZeroButtonText}>0</Text>
+          <Text style={calcHomeStyle.zeroButtonText}>0</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => PressOperator('+')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>+</Text>
+          <Text style={calcHomeStyle.calcButtonText}>+</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={CalcHomeStyle.ClacButtonsStyle}
+          style={calcHomeStyle.clacButtonsStyle}
           onPress={() => calculate('=')}>
-          <Text style={CalcHomeStyle.CalcButtonText}>=</Text>
+          <Text style={calcHomeStyle.calcButtonText}>=</Text>
         </TouchableOpacity>
       </View>
       <View>
         <TouchableOpacity
-          style={CalcHomeStyle.CButtonStyle}
+          style={calcHomeStyle.cButtonStyle}
           onPress={() => ClearDisplay()}>
-          <Text style={CalcHomeStyle.CButtonText}>C</Text>
+          <Text style={calcHomeStyle.cButtonText}>C</Text>
         </TouchableOpacity>
       </View>
 
@@ -179,8 +178,8 @@ function CalcHome({navigation}) {
           onPress={() => {
             navigation.push('SignIn');
           }}
-          style={CalcHomeStyle.GoBackButton}>
-          <Text style={CalcHomeStyle.GoBackButtonText}>Go Back</Text>
+          style={calcHomeStyle.goBackButton}>
+          <Text style={calcHomeStyle.goBackButtonText}>Go Back</Text>
         </TouchableOpacity>
       </View>
     </View>

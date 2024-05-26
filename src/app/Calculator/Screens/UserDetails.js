@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {View, Text, ScrollView} from 'react-native';
 import {useRoute} from '@react-navigation/native';
-import UserStyle from '../Styles/UserStyle';
+import userStyle from '../Styles/userStyle';
 
 function UserDetails() {
   const route = useRoute();
@@ -11,20 +11,20 @@ function UserDetails() {
 //     console.log(route.params);
 //   })
   return (
-    <View style={UserStyle.Container}>
+    <View style={userStyle.container}>
       <View>
-        <View style={UserStyle.CalculationBox}>
+        <View style={userStyle.calculationBox}>
 
             {/* need to update */}
-         <View style={{flexDirection:'row'}}>
-         <Text style={UserStyle.CalculationHeading}>Calculations of</Text>
-          <Text style={UserStyle.CalculationHeadingUserName}>{userName}</Text>
+         <View style={userStyle.calculationHeading}>
+         <Text style={userStyle.calculationHeading}>Calculations of</Text>
+          <Text style={userStyle.calculationHeadingUserName}>{userName}</Text>
          </View>
       { showCalculations?.length > 0 &&
            <ScrollView showsVerticalScrollIndicator={false}> 
            {Array.isArray(showCalculations) &&
            showCalculations.map((calculation, index) => (
-             <Text style={UserStyle.CalculationBoxText} key={index}>
+             <Text style={userStyle.calculationBoxText} key={index}>
                {calculation}
              </Text>
            ))}

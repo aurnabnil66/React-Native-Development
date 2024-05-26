@@ -1,24 +1,24 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 
-const SignInStyle = StyleSheet.create({
-  Container: {
+const signInStyle = StyleSheet.create({
+  container: {
     flex: 1,
     backgroundColor: '#fff',
     padding: 35,
     justifyContent: 'center'
   },
-  CalculatorImg: {
+  calculatorImg: {
     alignSelf: 'center'
   },
-  AppNameText: {
+  appNameText: {
     fontSize: 20,
     fontWeight: 'bold',
     color: '#111111',
     letterSpacing: 2,
     marginLeft: 115,
   },
-  UserNameField: {
+  userNameField: {
     flexDirection: 'row',
     borderWidth: 1,
     borderColor: '#4C4C4C',
@@ -29,7 +29,12 @@ const SignInStyle = StyleSheet.create({
     alignSelf: 'center',
     marginTop: 40,
   },
-  SignInButton: {
+  usernameFieldInside: {
+    left: 5, 
+    marginRight: 10, 
+    marginLeft: 10
+  },
+  signInButton: {
     width: 218,
     height: 59,
     backgroundColor: '#4C4C4C',
@@ -39,13 +44,13 @@ const SignInStyle = StyleSheet.create({
     alignSelf:'center',
     marginTop: 60
   },
-  ButtonText: {
+  buttonText: {
     fontSize: 18,
     fontWeight: '400',
     color: '#FFFFFF',
     marginBottom: 6,
   },
-  ErrorText:{
+  errorText:{
     fontSize: 15,
     fontWeight: '400',
     color: '#EE1C24',
@@ -54,4 +59,4 @@ const SignInStyle = StyleSheet.create({
   },
 });
 
-export default SignInStyle;
+export default signInStyle;

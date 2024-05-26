@@ -1,45 +1,46 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 
-const UserStyle = StyleSheet.create({
-  Container: {
+const userStyle = StyleSheet.create({
+  container: {
     flex: 1,
     backgroundColor: '#fff',
     padding: 35,
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
-  UserNameText: {
+  userNameText: {
     fontSize: 20,
     fontWeight: 'bold',
     color: '#111111',
     letterSpacing: 2,
     marginLeft: 115,
   },
-  CalculationBox: {
+  calculationBox: {
     height: 300,
     width: 300,
     alignItems: 'center',
     backgroundColor: '#17202a',
     borderRadius: 12,
     alignSelf: 'center',
-    padding: 40
+    padding: 40,
   },
-  CalculationHeading: {
+  calculationHeading: {
     fontSize: 22,
     fontWeight: 'bold',
     color: 'white',
     letterSpacing: 2,
-    marginBottom: 10
+    marginBottom: 10,
+    flexDirection: 'row',
   },
-  CalculationHeadingUserName: {
-    marginLeft:5,
+  calculationHeadingUserName: {
+    marginLeft: 5,
     fontSize: 22,
     fontWeight: 'bold',
     color: 'yellow',
     letterSpacing: 2,
-    marginBottom: 10
+    marginBottom: 10,
   },
-  CalculationBoxText: {
+  calculationBoxText: {
     fontSize: 20,
     fontWeight: 'bold',
     color: '#fff',
@@ -47,4 +48,4 @@ const UserStyle = StyleSheet.create({
   },
 });
 
-export default UserStyle;
+export default userStyle;
