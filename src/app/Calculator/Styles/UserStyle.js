@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 
-const UserStyle = StyleSheet.create({
+const userStyle = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
@@ -48,4 +48,4 @@ const UserStyle = StyleSheet.create({
   },
 });
 
-export default UserStyle;
+export default userStyle;
