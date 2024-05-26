@@ -6,10 +6,12 @@ import SignIn from './src/app/Calculator/Screens/SignInScreen';
 import CalcHome from './src/app/Calculator/Screens/CalcHomeScreen';
 import UserDetails from './src/app/Calculator/Screens/UserDetails';
 
+import ShowUseStateView from './src/app/Hooks/useState/View';
+import ShowUseEffectView from './src/app/Hooks/useEffect/View';
+
 export default function App() {
   const Stack = createNativeStackNavigator();
-
-
+  
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -22,5 +24,6 @@ export default function App() {
         <Stack.Screen name="UserDetails" component={UserDetails} />
       </Stack.Navigator>
     </NavigationContainer>
+
   );
 }
