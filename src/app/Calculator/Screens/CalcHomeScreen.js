@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {View, TouchableOpacity, Text, Button} from 'react-native';
 import calcHomeStyle from '../Styles/calcHomeStyle';
-import {View, TouchableOpacity, Text} from 'react-native';
 import {useRoute} from '@react-navigation/native';
 
 function CalcHome({navigation}) {
@@ -78,6 +77,7 @@ function CalcHome({navigation}) {
       <View style={calcHomeStyle.clacDisplay}>
         <Text style={calcHomeStyle.calcDisplayText}>{display}</Text>
       </View>
+
 
       <View style={calcHomeStyle.buttonPosition}>
         <TouchableOpacity
