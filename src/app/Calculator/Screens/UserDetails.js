@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, ScrollView} from 'react-native';
 import {useRoute} from '@react-navigation/native';
-import userStyle from '../Styles/userStyle';
+import userStyle from '../Styles/UserStyle';
 
 function UserDetails() {
   const route = useRoute();

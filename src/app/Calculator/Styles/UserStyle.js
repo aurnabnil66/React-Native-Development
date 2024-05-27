@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {StyleSheet} from 'react-native';
 
 const userStyle = StyleSheet.create({
